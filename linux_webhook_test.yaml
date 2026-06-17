@@ -1,0 +1,9 @@
+---
+- name: Webhook Test
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Show webhook test message
+      ansible.builtin.debug:
+        msg: "Webhook triggered successfully"
